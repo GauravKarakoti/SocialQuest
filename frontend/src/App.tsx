@@ -1,4 +1,3 @@
-// App.tsx
 import { useEffect, useState } from "react";
 import { initWeb3Auth }         from "./utils/web3auth";
 import { Web3Auth }             from "@web3auth/modal";

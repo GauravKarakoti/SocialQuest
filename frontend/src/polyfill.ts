@@ -1,5 +1,14 @@
 import { Buffer } from 'buffer';
+import process from 'process';
 
-if (typeof window !== 'undefined') {
-    window.Buffer = window.Buffer || Buffer;
-}
+window.Buffer = Buffer;
+window.process = process;
+global.Buffer = Buffer;
+globalThis.Buffer = Buffer;
+
+declare global {
+    interface Window {
+      Buffer: typeof Buffer;
+      process: typeof process;
+    }
+  }
