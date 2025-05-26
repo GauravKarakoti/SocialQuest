@@ -63,7 +63,7 @@ export const Web3AuthProvider = ({ children }: { children: React.ReactNode }) =>
 
         setWeb3Auth(modal);
         if (modal.provider) {
-          setProvider(modal.provider);
+          setProvider(modal.provider as SafeEventEmitterProvider);
           setUserInfo(await modal.getUserInfo());
         }
       } catch (e) {
@@ -79,7 +79,7 @@ export const Web3AuthProvider = ({ children }: { children: React.ReactNode }) =>
     setIsLoading(true);
     try {
       const p = await web3Auth.connect();   // opens the modal
-      setProvider(p);
+      setProvider(p as SafeEventEmitterProvider);
       setUserInfo(await web3Auth.getUserInfo());
     } finally {
       setIsLoading(false);

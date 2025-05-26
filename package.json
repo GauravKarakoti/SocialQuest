@@ -28,11 +28,6 @@
   },
   "dependencies": {
     "@chainlink/contracts": "^1.4.0",
-    "@web3auth/auth-adapter": "^9.7.0",
-    "@web3auth/ethereum-provider": "^9.7.0",
-    "@web3auth/modal": "^10.0.0",
-    "@web3auth/openlogin-adapter": "^8.12.4",
-    "buffer": "^6.0.3",
     "dotenv": "^16.5.0"
   }
 }
