@@ -1,0 +1,94 @@
+.container {
+  max-width: 56rem;  /* max-w-4xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem;  /* px-4 py-8 */
+}
+
+/* Wallet Connect Button */
+.wallet-btn {
+  padding: 0.75rem 1.5rem;  /* px-6 py-3 */
+  border-radius: 0.5rem;    /* rounded-lg */
+  font-weight: 500;         /* font-medium */
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+.wallet-btn:hover {
+  filter: brightness(110%);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+/* Social Post Card */
+.post-card {
+  background-color: #1e293b;  /* bg-slate-800 */
+  border-radius: 1rem;        /* rounded-xl */
+  padding: 1rem;              /* p-4 */
+  margin-bottom: 1rem;        /* mb-4 */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gas Status Badge */
+.gas-badge {
+  padding: 0.25rem 0.75rem;   /* px-3 py-1 */
+  border-radius: 9999px;      /* rounded-full */
+  font-size: 0.875rem;        /* text-sm */
+  font-weight: 500;           /* font-medium */
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid var(--primary);
+}
+
+/* Game Dice */
+.dice-container {
+  width: 5rem;                /* w-20 */
+  height: 5rem;               /* h-20 */
+  background-color: #1e293b;  /* bg-slate-800 */
+  border-radius: 1rem;        /* rounded-xl */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dice-container:hover {
+  background-color: #334155;  /* bg-slate-700 */
+  transform: scale(1.05);
+}
+
+/* Transaction Status */
+.tx-status {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #1e293b;  /* bg-slate-800 */
+  padding: 0.5rem 1rem;       /* px-4 py-2 */
+  border-radius: 0.5rem;      /* rounded-lg */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.loading-spinner {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  border-top-color: var(--primary);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}

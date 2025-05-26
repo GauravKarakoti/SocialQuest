@@ -30,3 +30,7 @@ SocialQuest is a Web3 dApp combining SocialFi, GameFi, and DeFi. Earn tokens by 
    ```bash
    npm start
    ```
+
+Contracts deployed at: 
+- SocialRewards.sol: `0x548bCE679243593327966eA2aC3A7AF4547Fb085`
+- DiceRoll.sol: `0xD62Dcf739F78dccf33C6346d63c033438898D24a`
